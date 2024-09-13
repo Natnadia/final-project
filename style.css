@@ -1,0 +1,302 @@
+html {
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    box-sizing: border-box;
+    background-color: rgb(235, 235, 235);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+
+body {
+    overflow-x: hidden;
+}
+/*ส่วนบนเฮดเด้อ*/
+#header {
+    background-color: #fff;
+    padding: 10px 10px;
+    width: 100%;
+    transition: top 0.3;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+.logo {
+    font-size: 24px;
+    font-weight: bold; 
+    color: rgb(0, 0, 0);
+}
+
+header nav ul{
+    list-style: none;
+    display: flex;
+    gap: 50px;
+}
+header nav ul li  {
+    display: inline;
+    margin-right: 20px;
+}
+header nav ul li a {
+    text-decoration: none;
+    color: #000000;
+    position: relative;
+}
+.icons a i{
+    color: #000000;
+}
+
+.hero {
+    text-align: center;
+    background: url(https://i.pinimg.com/564x/78/28/5b/78285b66878996b2113b22c6d7c37c8d.jpg);
+    background-size: cover;
+    width: auto;
+    height: auto;
+    padding: 280px 20px;
+}
+/*ส่วนboy shop*/
+.hero h1 {
+    font-size: 48px;
+}
+.subitle{
+    font-size: 24px;
+    color:#000000;
+    margin-bottom: 20px;
+}
+.description{
+    margin-bottom: 20px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+.btn {
+    background-color: #202020;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 20px;
+}
+
+
+/*ส่วนลงมา*/
+.about-us {
+    display: flex;
+    justify-content: space-between;
+    align-items:center ;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 20px;
+}
+.why-choose-us {
+    flex: 1;
+    max-width: 500px;
+    margin: 20px;
+}
+.why-choose-us h3{
+    font-size: 30px;
+    margin-bottom: 20px;
+    color: rgb(19, 13, 54);
+}
+.why-choose-us p{
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: rgb(10, 8, 19);
+}
+.why-choose-us .btn1{
+    background-color: #202020;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 20px;
+}
+.images {
+    display: flex;
+}
+.image-container {
+    flex:1;
+}
+.image-container img{
+    padding: 100px;
+    width: 400px;
+    border-radius: 150px;
+}
+
+
+
+
+/*ส่วนขายสินค้า*/
+.scroll-Best-Shoe {
+    width: 100%;
+    overflow-x: auto;
+    padding: 10px;
+    background-color: #fff;
+}
+.Best-Shoe h2 {
+    text-align: left;
+    font-size: 27px;
+    margin-bottom: 20px;
+}
+.scroll-product-grid {
+    display: flex;
+    justify-content: space-between;
+    gap: 5px;
+}
+.product-item {
+    border: 1px solid #ddd;
+    padding: 50px;
+    width: 350px;
+    text-align: center;
+    position: relative;
+    cursor: pointer;
+}
+.product-item img {
+    width: 300px;
+    height: auto;
+}
+.product-item h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+.product-item .price {
+    font-size: 15px;
+    font-weight: bold;
+}
+.rating {
+    font-size: 14px;
+}
+
+.scroll-product-grid div:hover {
+    transition: 0.3s;
+    transform: translateY(-10px);
+    box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
+  }
+
+
+  
+
+footer{
+    background-color: #ecececdd;
+}
+.footerContainer{
+    width : 100%;
+    padding: 10px 30px 20px;
+}
+.Socialicons{
+    display: flex;
+    justify-content: center;
+}
+.Socialicons a{
+    text-decoration: none;
+    padding: 20px;
+    background-color: rgb(255, 255, 255);
+    margin: 20px;
+    border-radius: 50%;
+}
+.Socialicons a i{
+    font-size: 2em;
+    color: #2f344b;
+    opacity: 0.9;
+}
+.Socialicons a:hover{
+    background-color: #000000;
+    transition: 0.5s;
+}
+.Socialicons a i:hover{
+    color: #ffffff;
+    transition: 0.5s;
+}
+.footerNav{
+    margin: 20px 0;
+}
+.footerNav ul{
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+.footerNav ul li a{
+    display: flex;
+    justify-content: center;
+    color: rgb(0, 0, 0);
+    margin: 35px;
+    text-decoration:none;
+    font-size: 1.2em;
+    opacity: 0.7;
+    transition: 0.5s;
+}
+.footerNav ul li a:hover{
+    opacity: 1;
+}
+
+.footerBottom{
+    background-color: #040420;
+    padding: 20px;
+    text-align: center;
+}
+.footerBottom p{
+    color: rgb(255, 255, 255);
+}
+.designer{
+    opacity: 0.7;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 400;
+    margin: 0px 5px;
+}
+
+
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding: 20px;
+}
+
+.card {
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 30%;
+    text-align: left;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+}
+.card:hover {
+    transform: scale(1.01);
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.text-content {
+    padding: 20px;
+}
+
+.text-content h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.text-content p {
+    font-size: 1em;
+    color: #666;
+}
+
+.text-content a {
+    color: #461c33;
+    text-decoration: none;
+    font-weight: bold;
+}
